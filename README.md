@@ -5,7 +5,6 @@ App-task is an example project for testing web applications.
 ## Description
 
 This project serves as a template or example for setting up and testing web applications. It's primarily written in PHP with Blade templating.
-
 ## Project Structure
 
 The repository contains the following main directories:
