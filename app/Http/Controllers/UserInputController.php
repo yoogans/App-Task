@@ -33,10 +33,10 @@ class UserInputController extends Controller
 
     public function show($id)
     {
-        $userInput = UserInput::findOrFail($id);
-        $persentase = $userInput->hitungPersentase();
+        $UserInput = UserInput::findOrFail($id);
+        $persentase = $UserInput->hitungPersentase();
 
-        return view('result', compact('persentase', 'userInput'));
+        return view('result', compact('persentase', 'UserInput'));
     }
 
     public function edit($id)

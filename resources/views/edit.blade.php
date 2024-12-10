@@ -17,17 +17,17 @@
 
             <div class="card" style="width: 50%">
                 <div class="card-body">
-                    <form action="{{ route('userinput.update', $userInput->id) }}" method="POST">
+                    <form action="{{ route('userinput.update', $UserInput->id) }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="mb-3">
                             <label for="input_1" class="form-label">Input 1</label>
-                            <input type="text" name="input_1" class="form-control" value="{{ $userInput->input_1 }}"
+                            <input type="text" name="input_1" class="form-control" value="{{ $UserInput->input_1 }}"
                                 id="input_1" required>
                         </div>
                         <div class="mb-3">
                             <label for="input_2" class="form-label">input 2</label>
-                            <input type="text" name="input_2" class="form-control" value="{{ $userInput->input_2 }}"
+                            <input type="text" name="input_2" class="form-control" value="{{ $UserInput->input_2 }}"
                                 id="input_2" required>
                         </div>
                         <button type="submit" class="btn btn-primary">update</button>
