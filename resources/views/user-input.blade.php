@@ -19,10 +19,10 @@
                 </thead>
                 <tbody>
 
-
+                    <?php $id = 1; ?>
                     @forelse ($UserInput as $userInput)
                         <tr>
-                            <td>{{ $userInput->id }}</td>
+                            <td>{{ $id++ }}</td>
                             <td>{{ $userInput->input_1 }}</td>
                             <td>{{ $userInput->input_2 }}</td>
 
